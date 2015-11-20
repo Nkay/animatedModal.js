@@ -109,7 +109,7 @@
         });
 
         function afterClose () {       
-            id.css({'z-index':settings.zIndexOut});
+            id.css({'z-index':settings.zIndexOut, display: 'none'});
             settings.afterClose(); //afterClose
         }
 

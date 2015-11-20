@@ -108,8 +108,9 @@
 
         });
 
-        function afterClose () {       
-            id.css({'z-index':settings.zIndexOut, display: 'none'});
+        function afterClose () {
+            id.off('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend');
+            id.css({'z-index':settings.zIndexOut});
             settings.afterClose(); //afterClose
         }
 
